@@ -4,7 +4,7 @@ const bgButton = document.querySelector("#bgButton");
 
 const result = document.querySelector(".result");
 
-worker.postMessage("hello, worker");
+worker.postMessage("this message was sent from main script to worker");
 
 //when recieved message back from worker
 worker.onmessage = (event) => {
